@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsList">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_margin="30dp">
+
+       <ListView
+           android:id="@+id/listView"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="16dp"
+           android:layout_marginEnd="16dp"
+           android:layout_marginBottom="16dp"
+           android:divider="#E8E8E8"
+           android:dividerHeight="2dp" />
+   </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="35dp"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#FF03DAC5"
+
+        app:tint="#ffff" />
+    <!--  app:tint="#ffff" to chnage the ico color    -->
+</RelativeLayout>
